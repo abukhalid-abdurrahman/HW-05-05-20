@@ -5,8 +5,8 @@ namespace Day_18
 {
     public class MyList<T> : IEnumerable
     {
-        private T[] list;
-        public int Count { get { return list.Length - 1; } }
+        private T[] list = new T[] { };
+        public int Count { get { return list.Length; } }
         public T this[int index]
         {
             get
