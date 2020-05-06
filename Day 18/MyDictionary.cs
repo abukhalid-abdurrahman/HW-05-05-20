@@ -37,16 +37,14 @@ namespace Day_18
 
         private int FindElementIndex(TKey item)
         {
-            int index = 0;
             for(int i = 0; i < keysList.Length; i++)
             {
                 if((object)item == (object)keysList[i])
                 {
-                    index = i;
-                    break;
+                    return i;
                 }
             }
-            return index;
+            return 0;
         }
 
         public void Add(TKey key, KValue value)
